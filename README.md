@@ -2,7 +2,13 @@
 
 - Web server for identification of strong promoters from genomic sequence input using nodejs & python
 
-Dependencies:
+General Dependencies
+
+- Python
+- Numpy
+- Biopython
+
+Dependencies to Interface with the Client
 
 - Express
 - ejs
