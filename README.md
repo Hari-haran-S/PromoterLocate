@@ -1,14 +1,14 @@
 # Promoter Locate
 
-- Web server for identification of strong promoters from genomic sequence input using nodejs & python
+*Web server for identification of strong promoters from genomic sequence input using nodejs & python*
 
-General Dependencies
+General Dependencies:
 
 - Python
 - Numpy
 - Biopython
 
-Dependencies to Interface with the Client
+Dependencies to Interface with the Client:
 
 - Express
 - ejs
