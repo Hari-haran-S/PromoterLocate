@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PromoterLocate</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <%- include('navbar') -%>
+    <div class="container col px-md-5 p-5">
+      <div class="jumbotron">
+        <h1 class="display-3">PromoterLocate</h1>
+        <p class="lead">
+          This website present a Python-based machine learning platfrom to
+          predict the strength of the promoter in genomic sequence to ease the
+          need for laborious and expensive equipment.
+        </p>
+        <hr class="my-2" />
+        <div class="mb-3"></div>
+
+        <form action="saveData" method="POST">
+          <div class="form-group">
+            <label for="exampleFormControlInput3"
+              >Enter the Genomic Sequence</label
+            >
+            <textarea
+              class="form-control"
+              name="seq"
+              id="exampleFormControlInput3"
+              rows="4"
+              cols="50"
+              placeholder="ATGCGCGCGC"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">-35 position</label>
+            <input
+              type="text"
+              name="seq35"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="-35 Positions sperated by comma (eg: 32,43,56,78)"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput2">-10 position</label>
+            <input
+              type="text"
+              name="seq10"
+              class="form-control"
+              id="exampleFormControlInput2"
+              placeholder="-10 Positions sperated by comma (eg: 32,43,56,78)"
+            />
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-outline-primary">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
