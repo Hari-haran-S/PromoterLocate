@@ -4,22 +4,23 @@
 
 Dependencies:
 
-> Express
-> ejs
-> nodemon
+- Express
+- ejs
+- nodemon
 
 Installation:
 
 ```
 npm install
+npm start
 ```
 
 How to use the software/web-server:
 
-> Enter the positions of -35 & -10 hexamer seperated by comma
-> Enter the Input genomic sequence
+- Enter the positions of -35 & -10 hexamer seperated by comma
+- Enter the Input genomic sequence
 
 Authors:
 
-> Ashok Palaniappan
-> Hariharan S
+- Ashok Palaniappan
+- Hariharan S
